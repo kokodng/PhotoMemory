@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainView"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/btPrivateInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/private_internal_memory"
+        app:layout_constraintBottom_toTopOf="@+id/btPublicInternal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btPublicInternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/public_internal_memory"
+        app:layout_constraintBottom_toTopOf="@+id/btPublicExternal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btPrivateInternal" />
+
+    <Button
+        android:id="@+id/btPublicExternal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/public_external_memory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btPublicInternal" />
+</android.support.constraint.ConstraintLayout>
